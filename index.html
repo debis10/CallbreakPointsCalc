@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbreak Points Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Callbreak Points Calculator</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="text" id="player1" value="Player1"></th>
+                    <th><input type="text" id="player2" value="Player2"></th>
+                    <th><input type="text" id="player3" value="Player3"></th>
+                    <th><input type="text" id="player4" value="Player4"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 15 rows for game rounds -->
+                <script>
+                    for (let i = 0; i < 15; i++) {
+                        document.write('<tr>');
+                        for (let j = 0; j < 4; j++) {
+                            document.write('<td><input type="number" class="prediction" value="0"></td>');
+                        }
+                        document.write('</tr>');
+                    }
+                </script>
+                <!-- Extra row for score calculation -->
+                <tr class="final-score">
+                    <td class="score">0</td>
+                    <td class="score">0</td>
+                    <td class="score">0</td>
+                    <td class="score">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="addScore">Add</button>
+        <button id="resetGame">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

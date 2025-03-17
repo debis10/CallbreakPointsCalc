@@ -1,0 +1,106 @@
+body { 
+    font-family: Arial, sans-serif;
+    background: url('6waLk8rJSPanT0AGPB_mtA.webp') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+thead {
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.player-name {
+    width: 100%;
+    font-size: 12px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for final score row */
+.final-score {
+    background-color: #f2f2f2; /* Light gray background */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark text color for contrast */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    td, th {
+        font-size: 10px;
+        padding: 3px;
+    }
+    input {
+        font-size: 10px;
+        padding: 3px;
+    }
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
